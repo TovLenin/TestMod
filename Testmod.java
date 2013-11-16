@@ -15,11 +15,12 @@ import net.minecraftforge.common.EnumHelper;
 @Mod(modid=ModInfo.MODID, name=ModInfo.NAME, version=ModInfo.VERSION)
 
 public class TestMod {
-	public static Item fork = new Fork(3200).setUnlocalizedName("Чисти-чисти");
 	public static final Block testBlock = new TestBlock(2000).setUnlocalizedName("testBlock");
 	public static Item sladkyHleb = new SweetBread(2022, 5, 0.4F, false).setUnlocalizedName("Sweet bread");
 	public static final EnumToolMaterial TEST = EnumHelper.addToolMaterial("TEST", 4, 2000, 10.0F, 5.0F, 10);
 	public static final Block shitOre = new ShitOre(2001).setUnlocalizedName("shitOre");
+	public static Item pieceOfShit = new PieceOfShit(2023).setUnlocalizedName("Piece of shit");
+//	public static Item fork = new Fork(0, TEST, 3200).setUnlocalizedName("Чисти-чисти");
 	@Mod.Instance(ModInfo.MODID)
 	public static TestMod mod;
 
@@ -35,9 +36,10 @@ public class TestMod {
 		GameRegistry.registerBlock(testBlock);
 		GameRegistry.registerBlock(shitOre);
 		LanguageRegistry.addName(testBlock, "Test Block");
-		LanguageRegistry.addName(fork, "Чисти-чисти");
+//		LanguageRegistry.addName(fork, "Чисти-чисти");
 		LanguageRegistry.addName(sladkyHleb, "Сладкий хлебушек");
 		LanguageRegistry.addName(shitOre, "Говноруда");
+		LanguageRegistry.addName(pieceOfShit, "Говна кусок");
 		GameRegistry.registerWorldGenerator(new ShitOreGenerator());
 	}
 
