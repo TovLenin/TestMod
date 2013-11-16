@@ -1,0 +1,66 @@
+package assets.testmod.src;
+/*
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.ItemAxe;
+
+public class Fork extends ItemAxe {
+
+        public Fork(int par1) {
+                super(par1, TestMod.TEST);
+        }
+
+        @Override
+        public void registerIcons(IconRegister par1IconRegister)
+        {
+                this.itemIcon = par1IconRegister.registerIcon(ModInfo.MODID + ":fork");
+        }
+}*/
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemStack;
+//import biomesoplenty.BiomesOPlenty;
+//import biomesoplenty.api.Items;
+
+public class Fork extends ItemPickaxe
+{
+//        public int textureID = 0;
+
+        public Fork(int par1, EnumToolMaterial par2, int texture)
+        {
+                super(par1, par2);
+//                textureID = texture;
+                setCreativeTab(CreativeTabs.tabTools);
+        }
+
+/*        @Override
+        public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
+        {
+                if (textureID == 1 && par2ItemStack.itemID == Items.miscItems.get().itemID && par2ItemStack.getItemDamage() == 2)
+                {
+                        return true;
+                }
+                else
+                {
+                        return false;
+                }
+        }
+
+        @Override
+        public void registerIcons(IconRegister iconRegister)
+        {
+                if (textureID == 0)
+                { 
+                        itemIcon = iconRegister.registerIcon("biomesoplenty:mudpickaxe"); 
+                }
+                else if (textureID == 1)
+                { 
+                        itemIcon = iconRegister.registerIcon("biomesoplenty:amethystpickaxe"); 
+                }
+                else 
+                { 
+                        itemIcon = iconRegister.registerIcon("biomesoplenty:mudball"); 
+                }
+        }
+*/}
